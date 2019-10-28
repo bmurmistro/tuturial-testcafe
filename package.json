@@ -1,0 +1,15 @@
+{
+  "name": "tutorial-testcafe",
+  "version": "1.0.0",
+  "description": "Applitools Testcafe example",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome:headless ./tests/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-testcafe": "^1.4.2",
+    "testcafe": "^1.6.0"
+  }
+}
