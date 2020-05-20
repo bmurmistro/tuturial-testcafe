@@ -8,7 +8,7 @@ const eyes = new Eyes();
 
 // Set page used in the test
 fixture`Testcafe Demo App`.page`https://demo.applitools.com`
-    // Closing eyes after the test
+    // Call Close on eyes to let the server know it should display the results
     .afterEach(async () => eyes.close())
     .after(async () => {
         // Wait and collect all test results
@@ -20,7 +20,7 @@ fixture`Testcafe Demo App`.page`https://demo.applitools.com`
     });
 
 test('ultraFastTest', async t => {
-    // Start the test by setting AUT's name, test name and batch name
+    // Call Open on eyes to initialize a test session
     await eyes.open({
         t, // pass testcafe contorller
         appName: 'Demo App',
@@ -37,10 +37,12 @@ test('ultraFastTest', async t => {
             {deviceName: 'iPhone X', screenOrientation: 'portrait'},
             {deviceName: 'Pixel 2', screenOrientation: 'portrait'}
         ],
+        // set batch name to the configuration
         batchName: 'Ultrafast Batch'
     });
 
-    // Visual checkpoint #1 - Check the login page.
+    // check the login page with fluent api, see more info here
+    // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
     await eyes.checkWindow({
         tag: "Login Window",
         target: 'window',
@@ -50,7 +52,7 @@ test('ultraFastTest', async t => {
     // This will create a test with two test steps.
     await t.click('#log-in')
 
-    // Visual checkpoint #2 - Check the app page.
+    // Check the app page
     await eyes.checkWindow({
         tag: "App Window",
         target: 'window',
