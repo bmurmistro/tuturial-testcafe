@@ -6,10 +6,8 @@
     * Option 1: `git clone https://github.com/applitools/tutorial-testcafe.git`
     * Option 2: Download it as a Zip file and extract it
 2. CD into the `tutorial-testcafe` folder
-3. Set up environment variable `APPLITOOLS_API_KEY` with your own API key.
+3. Change the `APPLITOOLS_API_KEY` with your own (apiKey configuration property of the applitools.config.js file).
     * Login to Applitools > Click on the Person icon > My API Key
-    * Linux/Mac: export APPLITOOLS_API_KEY=<your_key>
-    * Windows: set APPLITOOLS_API_KEY=<your_key>
 4. run `npm install`
 5. run `npm test`
 
