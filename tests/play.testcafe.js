@@ -20,7 +20,7 @@ fixture`Testcafe Demo App`.page`https://careers.twitter.com/`
         console.log(allTestResults)
     });
 
-test('ultraFastTest', async t => {
+/*test('ultraFastTest', async t => {
     // Call Open on eyes to initialize a test session
     await eyes.open({
         t, // pass testcafe contorller
@@ -86,4 +86,4 @@ test('ultraFastTest3', async t => {
     });
     var end  =new Date().getTime();
     console.log(end -start)
-});
+});*/

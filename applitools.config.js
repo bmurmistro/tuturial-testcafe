@@ -1,5 +1,4 @@
 module.exports = {
-    apiKey: 'APPLITOOLS_API_KEY',
     //
     browser: [
         // Add browsers with different viewports
@@ -14,5 +13,6 @@ module.exports = {
     ],
     // set batch name to the configuration
     batchName: 'Ultrafast Batch',
-    concurrency: 3
+    concurrency: 3,
+    showLogs: true,
 }
