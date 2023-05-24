@@ -4,7 +4,7 @@
   "description": "Applitools Testcafe example",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome ./tests/testcafe.*"
+    "test": "testcafe chrome ./tests/play.testcafe.*"
   },
   "author": "",
   "license": "ISC",
