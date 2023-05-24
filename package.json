@@ -4,12 +4,15 @@
   "description": "Applitools Testcafe example",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome:headless ./tests/*"
+    "test": "testcafe chrome ./tests/testcafe.*"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@applitools/eyes-testcafe": "1.12.1",
-    "testcafe": "latest"
+    "@applitools/eyes-testcafe": "1.17.4",
+    "testcafe": "1.18.1"
+  },
+  "dependencies": {
+    "test": "^0.6.0"
   }
 }
